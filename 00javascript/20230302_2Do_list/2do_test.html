@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html,body{height: 100%;}
+    *{margin: 0;padding: 0;box-sizing: border-box;}
+    a:link,a:visited{text-decoration: none;color: #333;}
+    li{list-style: none;}
+</style>
+
+<body>
+    <div class="inpWrap">
+        <input type="text" class="inp" value="" placeholder="오늘의 할일을 입력해주세요">
+        <button class="btn1">입력</button>
+    </div>
+    <div class="listView">
+
+    </div>
+    <script>
+
+
+        const inpElem = document.querySelector(".inp");
+        const btnElem = document.querySelector(".btn1");
+        const listElem = document.querySelector(".listView");
+
+        const listData = []
+        btnElem.addEventListener("click",function (){
+            
+            if(inpElem.value == ""){
+                alert("오늘의 할일을 입력하세요");
+                inpElem.focus()
+            }else{
+                listData.push(inpElem)
+            }
+            
+        })
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>

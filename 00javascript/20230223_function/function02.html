@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;box-sizing:border-box;}
+        .btn{
+            width: 200px;
+            height: 40px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sky{
+            background:#005BAC;
+            
+        }
+        .pink{
+            background: pink;
+        }
+        .red{
+            background: red;
+        }
+        .orange{
+            background: orangered;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background: violet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // print();
+        // kim();
+
+        function print(){
+            console.log("print")
+        }
+
+        const kim = function print(){
+            console.log ("kim")
+        }
+        function lions(mylink){
+            if(mylink=="라이온즈"){
+                location.href = "https://www.samsunglions.com/"
+            }
+        }
+        
+        function landers(mylink){
+            if(mylink=="랜더스"){
+                location.href = "http://www.ssglanders.com/"
+            }
+        }
+        function eagles(mylink){
+            if(mylink=="이글스"){
+                location.href = " https://www.hanwhaeagles.co.kr/"
+            }
+        }
+    </script>
+<div onclick="lions('라이온즈')" class="btn sky">samsung lions</div>         
+<div onclick="print()" class="btn pink">클릭</div>         
+
+
+
+<div onclick ="landers('랜더스')" class="btn red">ssg landers</div>         
+<div onclick="eagles('이글스')" class="btn orange">hanwha eagles</div>         
+
+<div style="background-image: url(/00javascript/landers.png);" class="box"
+ onmouseover="boxOver('red','white')"
+  onmouseout="boxOut()" >
+    마우스
+</div>
+
+<script>
+    const boxElem = document.getElementsByClassName("box")[0];
+
+    // boxElem.onmouseover = function(){
+    //     console.log("mouseover");
+    //     boxElem.style.background = "blue";
+    //     boxElem.style.color = "white"
+    // }
+    // boxElem.onmouseout = function(){
+    //     console.log("mouseout");
+    //     boxElem.style.background = "violet";
+    //     boxElem.style.color = "black"
+
+    // }
+
+    function boxOver(color,fcolor){
+        boxElem.style.background= color
+        boxElem.style.color= fcolor
+
+    }
+    function boxOut(){
+        boxElem.style.background= "violet"
+
+    }
+</script>
+
+
+
+</body>
+</html>

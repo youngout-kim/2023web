@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../20230220bxslide/css/jquery.bxslider.css">
+    <style>
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+        .bwrap .slide1 li img{width: 100%;}
+        body{background: #ccc;}
+        .bwrap .slide1 li img{
+            width: 100%;
+        }
+        .bx-wrapper{
+            -moz-box-shadow:0 0 0px #ccc;
+            -webkit-box-shadow: 0 0 0px #ccc;
+            box-shadow: 0 0 0px #ccc;
+            border: 0px solid;
+            background: #fff;
+            margin-bottom: 0px;
+            
+        }
+
+        .bx-wrapper .bx-pager{
+            bottom: 30px;
+        }
+        .contaier{
+            width: 1000px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .bwrap .slideli{
+            height: 400px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .bwrap .slideli .txtWrap{
+            height: 100%;
+        }
+        .bwrap .slideli .twrap{
+            width: 400px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-shadow: 3px 3px 0 rgba(255,255,255,0.8);
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div class="bwrap">
+        <ul class="slide1">
+            <li style="background-image: url(../20230220bxslide/images/pc01.jpg);" class="slideli">
+                <div class="container txtWrap">
+                    <div class="twrap">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </li>
+            <li style="background-image: url(../20230220bxslide/images/pc02.jpg);" class="slideli">
+                <div class="container txtWrap">
+                    <div class="twrap">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </li>
+            <li style="background-image: url(../20230220bxslide/images/pc03.jpg);" class="slideli">
+                <div class="container txtWrap">
+                    <div class="twrap">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </li>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function(){
+           
+         $(".slide1").bxSlider({
+                auto: true,
+                
+            });
+            
+        })
+
+    </script>
+    
+</body>
+</html>

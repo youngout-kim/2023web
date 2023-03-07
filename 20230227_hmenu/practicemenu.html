@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+        html,body{height: 100%;}
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .mWrap{
+            width: 50px;
+            height: 50px;
+            border: 1px solid#000;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .line{
+            width: 20px;
+            height: 3px;
+            background: #000;
+            border-radius: 2px;
+            position: absolute;
+            transition: 0.3s;
+        }
+        .line.line1{transform: translateY(-10px);}
+        .line.line2{opacity: 1;}
+        .line.line3{transform: translateY(10px);}
+
+        .mWrap.click .line1{transform: translateY(0)rotate(45deg);}
+        .mWrap.click .line2{opacity: 0;}
+        .mWrap.click .line3{transform: translateY(0)rotate(-45deg);}
+        
+
+    </style>
+</head>
+<body>
+    <div class="mWrap" onclick="mClick()">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+    </div>
+    <script>
+        function mClick(){
+            document.querySelector(".mWrap").classList.toggle("click")
+        }
+    </script>
+    
+</body>
+</html>

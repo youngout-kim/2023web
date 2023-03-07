@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let kim = "a"
+
+        const arr1 = ["a", "b", "c", "d"]
+        console.log(arr1[0])
+        // document.write(arr1[3])
+        // alert(arr1[1])
+        console.log(arr1.length)
+        for (let i = 0; i < arr1.length; i++) {
+            console.log(arr1[i])
+        }
+
+        const city = [
+            "incheon",
+            "seoul",
+            "bucheon",
+            "siheung",
+        ]
+        let citySize = city.length;
+
+        // for(let i = 0 ; i<citySize; i++){
+        //     document.write(city[i] + "<br>")
+        //     console.log(city[i])
+        // }
+
+
+
+       
+        function printCity() {
+            let text = "";
+            for (let i = 0; i < citySize; i++) {
+                text = text + city[i]
+                // document.write(city[i] + "<br>")
+                // console.log(city[i])
+
+
+            }
+             return text;
+        }
+        let textValue = printCity();
+        
+    </script>
+
+    <div class="city1">
+        <!-- <script>
+             printCity()
+        </script> -->
+    </div>
+    <div class="city2">
+        <!-- <script>
+             printCity()
+        </script> -->
+    </div>
+
+    <script>
+        document.getElementsByClassName("city1")[0].innerHTML = textValue
+    </script>
+
+</body>
+
+</html>

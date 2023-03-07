@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+
+        }
+
+        .hd {
+            height: 80px;
+            background: skyblue;
+        }
+
+        .visual {
+            height: 100vh;
+            background-image: url(../../images/pc01.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .content ul {
+            display: flex;
+            justify-content: space-between; 
+        
+        }
+        .content ul li{
+            width: calc((100% - 60px) / 4);
+        }
+
+        .content ul img {
+            width: 100%;
+            display: block;
+        }
+        .content ul .tWrap{
+            background-color: #ddd;
+            padding: 15px 20px;
+        }
+        .text{
+            color: red;
+            font-size: 3em;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hd container">
+        <div class="text">
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-car-side"></i>
+            <a href="https://www.twitch.tv/?lang=ko"><i class="fa-brands fa-twitch"></i></a>
+            <i class="fa-brands fa-square-steam"></i>
+        </div>
+        
+    </header>
+    <div class="visual"></div>
+    <section class="content container">
+    <ul>
+        <li class="wow bounceInUp" data-wow-delay="0">
+            <img src="../../images/testimg.jpg" alt="">
+            <div class="tWrap">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, voluptatibus!</p>
+            </div>
+        </li>
+        <li class="wow bounceInUp" data-wow-delay="0.2s">
+            <img src="../../images/testimg.jpg" alt="">
+            <div class="tWrap">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, voluptatibus!</p>
+            </div>
+        </li>
+        <li class="wow bounceInUp" data-wow-delay="0.4s">
+            <img src="../../images/testimg.jpg" alt="">
+            <div class="tWrap">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, voluptatibus!</p>
+            </div>
+        </li>
+        <li class="wow bounceInUp" data-wow-delay="0.6s">
+            <img src="../../images/testimg.jpg" alt="">
+            <div class="tWrap">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, voluptatibus!</p>
+            </div>
+        </li>
+    </ul>
+</section>
+    <section class="content container" style="display: none;">
+    <ul>
+        <li class="wow hinge" data-wow-delay="0" data-wow-iteration="infinite">
+            <img src="../../images/testimg.jpg" alt="">
+            <div class="tWrap">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, voluptatibus!</p>
+            </div>
+        </li>
+        <li class="wow pulse" data-wow-delay="0.2s" data-wow-iteration="infinite">
+            <img src="../../images/testimg.jpg" alt="">
+            <div class="tWrap">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, voluptatibus!</p>
+            </div>
+        </li>
+        <li class="wow pulse" data-wow-delay="0.4s" data-wow-iteration="infinite">
+            <img src="../../images/testimg.jpg" alt="">
+            <div class="tWrap">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, voluptatibus!</p>
+            </div>
+        </li>
+        <li class="wow pulse" data-wow-delay="0.6s" data-wow-iteration="infinite">
+            <img src="../../images/testimg.jpg" alt="">
+            <div class="tWrap">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, voluptatibus!</p>
+            </div>
+        </li>
+    </ul>
+</section>
+<script src="wow.js"></script>
+<script>
+    new WOW().init();
+</script>
+</body>
+
+</html>

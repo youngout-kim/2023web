@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function GameMan(name,job,loc){
+            this.name = name;
+            this.job = job;
+            this.loc = loc;
+
+            this.move = function(){
+                document.write(this.name + "(" + this.job + ")" + this.loc + "로 이동 <br>" )
+            }
+        }
+
+        GameMan.prototype.attack=function(){
+            document.write(this.name+"("+this.job+")가 공격합니다.")
+        }
+        
+        const kim = new GameMan("김영인","원딜","구로")
+        
+        console.log(kim.name)
+        kim.move()
+        kim.attack()
+
+        const you = new GameMan ("손흥민","윙어","런던")
+        you.move()
+        you.attack()
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0;padding: 0;box-sizing: border-box;}
+        .wrap{
+            width: 1000px;
+            height: 300px;
+            background: whitesmoke;
+            position: relative;
+            margin: 0 auto;
+            overflow: hidden;
+        }  
+        .box1{
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: 0;top: 0;
+            background: red;
+        } 
+        .box2{
+            width: 600px;
+            height: 300px;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            position: absolute;
+            left: -600px;bottom: 0;
+            background: whitesmoke;
+            transition: 0.3s;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box1" onmouseover="" onmouseout="">클릭</div>
+        <div class="box2" style="background-image: url(/00javascript/landers.png);">SSg landers</div>
+    </div>
+
+    <script>
+        const box1Elem = document.getElementsByClassName("box1")[0];
+        const box2Elem = document.getElementsByClassName("box2")[0];
+
+        box1Elem.onmouseover = function(){
+            box2Elem.style.background = "png"
+            box2Elem.style.left = "0%";
+
+        }
+        box1Elem.onmouseout = function(){
+            box2Elem.style.background = "img"
+            box2Elem.style.left = "-600px";
+
+        }
+
+    </script>
+    
+</body>
+</html>
