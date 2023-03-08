@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <p onmouseover="this.style.backgroundcolor='skyblue'" onmouseout="this.style.backgroundColor='initial'">마우스를 올려주세요
+    </p>
+
+    <p class="box">
+        마우스를 올려주세요
+    </p>
+
+    <script>
+        let boxEl = document.querySelector("body p.box");
+
+
+        function mouseover() {
+            boxEl.style.backgroundColor = "skyblue"
+        }
+        function mouseout() {
+            boxEl.style.border = "initial"
+            boxEl.style.background = "initial"
+        }
+
+        boxEl.onmouseover = mouseover;
+        boxEl.onmouseout = mouseout;
+    </script>
+
+    <p class="box1">
+        마우스를 올려주세요
+    </p>
+    <script>
+        const box1El = document.querySelector(".box1");
+
+        let width = 100 * 1;
+
+        // box1El.addEventListener("mouseover",function(){
+        //     box1El.style.width = width + "px"
+        //       box1El.style.background = "skyblue" 
+
+        // })
+        // box1El.addEventListener("mouseout",function(){
+        //     box1El.style.width = "100%";
+        //     box1El.style.background = "initial"
+
+        // })
+
+        box1El.addEventListener("mouseover", mOver)
+        box1El.addEventListener("mouseoutr", mOut)
+
+        function mOver() {
+            box1El.style.width = width + "px";
+            box1El.style.background = "skyblue";
+        }
+        function mOut(){
+            box1El.style.width = "100%";
+            box1El.style.background = "initial";
+        }
+
+    </script>
+</body>
+
+</html>
