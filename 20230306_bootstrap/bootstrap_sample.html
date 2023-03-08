@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      body{
+        /* background: #ddd; */
+      }
+      .visual{
+        background-image: url(images/main_banner.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        background-attachment: fixed;
+      }
+      .bg-gray{
+        background: #f0f1f4 !important
+      }
+      .banner1 .card{
+            transition:0.3s;
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+            border:0 none;
+        }
+        .banner1 .card:hover{
+            box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+            transform:translate(-10px,-10px)
+        }
+    </style>
+</head>
+<body>
+    <div class="header fixed-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-md bg-body-tertiary navbar-danger">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">SSG Landers</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       About Landers
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">연혁</a></li>
+                      <li><a class="dropdown-item" href="#">엠블럼</a></li>
+                      <li><a class="dropdown-item" href="#">후원사</a></li>
+                      <li><a class="dropdown-item" href="#">구단정보</a></li>
+                    </ul>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Players
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">코칭스태프</a></li>
+                      <li><a class="dropdown-item" href="#">투수</a></li>
+                      <li><a class="dropdown-item" href="#">포수</a></li>
+                      <li><a class="dropdown-item" href="#">내야수</a></li>
+                      <li><a class="dropdown-item" href="#">외야수</a></li>
+                      <li><a class="dropdown-item" href="#">군입대 선수</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Game
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">경기일정</a></li>
+                      <li><a class="dropdown-item" href="#">입장권 안내</a></li>
+                      <li><a class="dropdown-item" href="#">단체관람 신청</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Media
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">랜더스 소식</a></li>
+                      <li><a class="dropdown-item" href="#">랜더스 포토</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Fan
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Youtube,Instagram</a></li>
+                      <li><a class="dropdown-item" href="#">응원단</a></li>
+
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Stadium
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">구장소개</a></li>
+                      <li><a class="dropdown-item" href="#">주차안내</a></li>
+                      <li><a class="dropdown-item" href="#">찾아오시는 길</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">홈 경기예매</a>
+                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Shop</a>
+                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Contact us</a>
+                    </li>
+              </div>
+            </div>
+          </nav>
+      </div>
+    </div>
+    <div class="visual container-fluid py-5 text-left text-md-center text-white">
+      <h1>Lorem, ipsum dolor.</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="btn btn-danger d-block d-md-inline-block mb-3">SSg Landers</div>
+      <img src="images/sns_landers.png" alt="" class="d-none d-md-block m-auto">
+    </div>
+
+
+
+
+<div class="bg-gray py-5">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-5 order-2 order-md-1 text-center text-md-start">
+              <h2>Lorem, ipsum dolor.</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, at.</p>
+              <div class="btn btn-primary d-block d-md-inline-block">more</div>
+          </div>
+          <div class="col-md-7 order-1 order-md-2 mb-4 mb-md-0">
+              <img src="images/symu-panel-1.png" alt="" class="img-fluid w-100">
+          </div>
+      </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+      <div class="col-md-7 mb-3 mb-md-0">
+          <img src="images/symu-panel-2.png" alt="" class="w-100">
+      </div>
+      <div class="col-md-5 text-center text-md-start">
+          <h2>Lorem, ipsum dolor.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, at.</p>
+          <div class="btn btn-primary d-block d-md-inline-block">more</div>
+      </div>
+  </div>
+</div>
+<div class="bg-gray py-5">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-5 order-2 order-md-1 text-center text-md-start">
+              <h2>Lorem, ipsum dolor.</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, at.</p>
+              <div class="btn btn-primary d-block d-md-inline-block">more</div>
+          </div>
+          <div class="col-md-7 order-1 order-md-2 mb-4 mb-md-0">
+              <img src="images/home-panel-3.jpg" alt="" class="img-fluid w-100">
+          </div>
+      </div>
+  </div>
+</div>
+<div class="bg-pink banner1">
+  <div class="container py-5">
+      <div class="wrap text-start text-lg-center ">
+          <h3>GALLERY</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, est!</p>
+      </div>
+      <div class="row">
+          <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+              <div class="card">
+                  <img src="images/testimg.jpg" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col-6 col-lg-3">
+              <div class="card">
+                  <img src="images/testimg.jpg" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col-6 col-lg-3">
+              <div class="card">
+                  <img src="images/testimg.jpg" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col-6 col-lg-3">
+              <div class="card">
+                  <img src="images/testimg.jpg" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="banner2">
+  <div class="container py-5">
+      <div class="wrap text-start text-lg-center text-white">
+          <h3>NOTICE</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, est!</p>
+      </div>
+      <div class="row">
+          <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                  <img src="images/testimg.jpg" class="card-img-bottom">
+                </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                  <img src="images/testimg.jpg" class="card-img-bottom">
+                </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                  <img src="images/testimg.jpg" class="card-img-bottom">
+                </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                  <img src="images/testimg.jpg" class="card-img-bottom">
+                </div>
+          </div>
+          
+      </div>
+  </div>
+</div>
+<div class="bg-dark py-5">
+  <div class="container text-white text-center text-md-start">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nisi.
+  </div>
+</div>
+
+
+
+      <script src="bootstrap.bundle.min.js"></script>
+
+      <script>
+        const hElem = document.querySelector(".header");
+        const navElem = document.querySelector(".header .navbar");
+
+
+        let winY = window.pageYOffset;
+
+
+        window.addEventListener("scroll",function(){
+            winY = window.pageYOffset;
+            
+            if(winY >0){
+                hElem.classList.add("bg-white")
+                hElem.classList.remove("navbar-danger")
+            }else{
+                hElem.classList.remove("bg-white")
+                hElem.classList.add("navbar-dnager")
+            }
+        })
+    </script>
+        
+ </body>
