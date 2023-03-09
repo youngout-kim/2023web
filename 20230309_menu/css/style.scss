@@ -1,0 +1,12 @@
+$width:1000px
+
+.container {
+    width: $width;
+    margin: 0 auto;
+}
+.sub{display: none;}
+.gnb{
+    ul{
+        display: flex;
+    }
+}

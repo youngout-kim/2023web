@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="../../css/reset.css">
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+    <button class="btn1">변경</button>
+    <script>
+        let boxElem = document.querySelector(".box")
+        boxElem.innerHTML = "test"
+        boxElem.style.border = "1px solid #000"
+
+        let box1Elem = $(".box1")
+        box1Elem.html(".box")
+        // box1Elem.css("background-color","red")
+        // box1Elem.css({
+        //     "background-color":"red",
+        //     "color":"white"
+        // })
+
+    //     $(".btn1").click(function(){
+    //         $(".box1").css({
+    //             "background-color":"red",
+    //             "color":"white"
+    //         })
+    //     }).addClass("han")
+
+    $(".btn1").click(function (){
+        $(".box").addClass("han")
+    })
+    $(".btn2").click(function (){
+        $(".box").removeClass("han")
+    })
+    </script>
+
+    <style>
+        .banner{
+            width: 240px;
+            height: 175px;
+            background-image: url(KakaoTalk_20230309_124031478.jpg);
+            background-position: 0 calc( -175 * 2);
+        }
+    </style>
+
+    <div class="banner"></div>
+
+    <script>
+        let num = 1;
+        let btnAni;
+
+        function bChange(){
+            num++;
+            if(num>45){
+                num = 0;
+            }
+            $(".banner").css("background-position", "0 -" + 175*num + "px")
+        }
+
+        function bChangeR(){
+            num--;
+            setTimeout(function(){
+                $(".banner").css("background-position", "0 -" + 175*num + "px")
+                if(num<1){
+                    return false
+                }else{
+                    bChangeR
+                }
+            },40)
+        }
+
+        $(".banner").mouseover(function (){
+            setIneterval(bChange,40)
+        })
+        $(".banner").mouseleave(function (){
+            clearInterval(btnAni)
+            bChangeR(-45)
+        })

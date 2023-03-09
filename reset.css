@@ -18,7 +18,7 @@ li {
 a:link,
 a:visited {
     text-decoration: none;
-    color: black;
+    color:whitesmoke;
 }
 .clearfix::after{
     content: "";
