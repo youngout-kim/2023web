@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../reset.css">
+    <link rel="stylesheet" href="/00javascript/20230310_jquerry_tab/css/style2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+</head>
+<body>
+    <div class="tab">
+        <ul class="Wrap">
+            <li class="active">tab1</li>
+            <li>tab2</li>
+            <li class="active">tab3</li>
+            <li class="active">tab4</li>
+        </ul>
+    </div>
+    <div class="conWrap">
+        <div>
+           1.Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quis?
+        </div>
+        <div>
+           2.Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quis?
+        </div>
+        <div>
+           3.Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quis?
+        </div>
+        <div>
+           4.Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quis?
+        </div>
+    </div>
+    <script>
+        $(".tab li").click(function(){
+            console.log($(this).index())
+            let i = $(this).index()
+            $(".tab li").removeClass("active")
+            $(".tab li").eq(i).addClass("active")
+
+
+            $(".conWrap div").hide()
+            $(".conWrap div").eq(i).show()
+        })
+    </script>
+</body>
+</html>
